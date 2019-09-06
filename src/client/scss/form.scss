@@ -1,0 +1,54 @@
+.common-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1em;
+    flex-wrap: wrap;
+}
+
+.time-form, .time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    width: 100%;
+}
+
+.time_picker_container {
+    width: 50%;
+}
+
+.classic_theme_container .classic_time.light.active, .classic_theme_container .classic_time.light:hover {
+    background-color: #CD7B7D !important;
+}
+
+.preview_container.without_icon {
+    padding-right: 0 !important;
+}
+
+.preview_container {
+    padding-left: 0 !important;
+}
+
+.row-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0 !important;
+}
+
+.company-card .row-form {
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 720px) {
+    .header-nav .row-form {
+        flex-wrap: wrap;
+    }
+}

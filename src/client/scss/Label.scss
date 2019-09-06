@@ -1,0 +1,30 @@
+.creidt-links a, .label{
+    color: black;
+    text-decoration: none;
+}
+
+.Auth-title {
+    margin-left: 1em;
+}
+
+#error_message {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.credits .row {
+    padding: 1em;
+}
+
+.credits {
+    padding: 0 1em 0 1em;
+}
+
+.creidt-devs {
+    display: flex;
+    flex-direction: column;
+}
+
+.creidt-devs h6 {
+    color: #333;
+}

@@ -1,0 +1,4 @@
+DB_USER=strawberryshortcakes // the user you created for your database
+DB_PASS=Strawberryshortcakes123  // please use a better password
+DB_SERVER=ds217349.mlab.com:17349/strawberryshortcakes
+PORT=https://strawberryshortcakes.herokuapp.com 

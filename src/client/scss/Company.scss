@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    margin: .2em 1em;
+}
+
+.title {
+    margin-top: 2em;
+    display: flex;
+}
+
+.title h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.title p {
+    font-size: 1.3em;
+    margin-bottom: 1em; 
+}
+
+.company-card {
+    background-color: #F7F7F9;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.btn-container {
+    justify-content: center;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-weight: 700;
+}
+
+/* Company tag plugin */
+
+.react-tagsinput {
+    padding: 0.5em 1em 0em 1em;
+    border-radius: 2em;
+    border-color: #999;
+    color: #999;
+    background: none;
+}
+
+.react-tagsinput--focused {
+    border-color: #B64042;
+}
+
+.react-tagsinput-tag {
+    border-color: #B64042;
+    background: none;
+    color: #B64042;
+}
+
+.react-tagsinput ::placeholder {
+    color: #777;
+    opacity: 1; /* Firefox */
+}

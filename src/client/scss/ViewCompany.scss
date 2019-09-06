@@ -1,0 +1,43 @@
+.booking-details {
+    margin: 1em;
+}
+
+.booking-sub {
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.divder {
+    width: 100%;
+    height: 1px;
+    background-color: #666666;
+    margin-bottom: .7em;
+}
+
+.booking-description {
+    margin-bottom: 0 !important;
+}
+
+.booking-row {
+    text-align: center;
+}
+
+.booking-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control, #available_times {
+    width: 80% !important;
+    border-radius: 3em !important;
+}
+
+.form-control:disabled, .form-control[readonly], #available_times {
+    background-color: #fff !important;
+}
+
+#available_times {
+    padding: 0.5em;
+}

@@ -1,0 +1,16 @@
+.times-available {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time-card {
+    display: flex;
+    margin: 0 .5em 1em 0;
+    border: 1px solid #B64042;
+    border-radius: 3em;
+    padding: .2em 1em .2em 1em;
+}
+
+.time-icon {
+    margin-left: 1em;
+}
