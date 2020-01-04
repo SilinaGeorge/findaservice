@@ -68,7 +68,7 @@ class Header extends Component {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://localhost:3000/api-docs.md">
+          <NavLink href="https://find--a--service.herokuapp.com/api-docs.md">
             Docs
           </NavLink>
         </NavItem>

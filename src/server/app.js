@@ -44,7 +44,7 @@ app.use("/api/appointments", router);
 
 var cors = require('cors');
 var corsOptions = {
-    origin: 'https://localhost:3000/',
+    origin: 'https://find--a--service.herokuapp.com/',
     credentials: true };
 
 app.use(cors(corsOptions));
