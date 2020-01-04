@@ -44,7 +44,7 @@ app.use("/api/appointments", router);
 
 var cors = require('cors');
 var corsOptions = {
-    origin: 'http://localhost:3000/',
+    origin: 'https://localhost:3000/',
     credentials: true };
 
 app.use(cors(corsOptions));

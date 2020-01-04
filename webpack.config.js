@@ -1,10 +1,25 @@
 var webpack = require("webpack");
 var path = require("path");
+var fs = require("fs");
 
 var BUILD_DIR = path.resolve(__dirname, "./build");
 var APP_DIR = path.resolve(__dirname, "./src/client");
 
 const config = {
+  devServer:{
+
+    https: {
+      key: fs.readFileSync('./server.key'),
+      cert: fs.readFileSync('./server.crt')
+    },
+    port: 3000,       // ssl defult port number
+/*     inline: true,
+
+    historyApiFallback: true,
+    publicPath: '/',
+    contentBase: './build',
+    disableHostCheck: true */
+},
   entry: {
     main: APP_DIR + "/index.js"
   },

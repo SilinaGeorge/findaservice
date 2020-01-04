@@ -19,6 +19,8 @@ class Discover extends Component {
       lng: 0,
       pos: []
     };
+    Geocode.setApiKey("AIzaSyA0UqHNnf_ORk0hYHxpplvfG9Ke9wsSNcA"); 
+
     this.displaySearchData = this.displaySearchData.bind(this);
     this.showEmpty = this.showEmpty.bind(this);
     this.getMapClicked = this.getMapClicked.bind(this);
@@ -27,10 +29,8 @@ class Discover extends Component {
   }
 
   UNSAFE_componentWillMount() {
-    // set our api key
-    console.log('here')
-     Geocode.setApiKey("AIzaSyA0UqHNnf_ORk0hYHxpplvfG9Ke9wsSNcA"); 
-
+        // set our api key
+        Geocode.setApiKey("AIzaSyA0UqHNnf_ORk0hYHxpplvfG9Ke9wsSNcA"); 
   }
 
   // Get latidude & longitude from address.

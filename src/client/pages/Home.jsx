@@ -24,7 +24,7 @@ class Home extends Component {
 
   // get the users location when component mounts
   UNSAFE_componentWillMount() {
-    console.log('here2')
+    Geocode.setApiKey("AIzaSyA0UqHNnf_ORk0hYHxpplvfG9Ke9wsSNcA"); 
     this.getLocation();
   }
 
@@ -63,7 +63,7 @@ class Home extends Component {
   getLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
-        console.log(position.coords.latitude)
+        
         this.convertfromLat(
           position.coords.latitude,
           position.coords.longitude
@@ -74,6 +74,7 @@ class Home extends Component {
 
   // convert location into lat and long coordinates
   convertfromLat = (lat, long) => {
+    console.log(Geocode)
     Geocode.fromLatLng(lat, long).then(
       response => {
         const address = response.results[0].formatted_address;
