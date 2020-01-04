@@ -74,7 +74,6 @@ class Home extends Component {
 
   // convert location into lat and long coordinates
   convertfromLat = (lat, long) => {
-    console.log(Geocode)
     Geocode.fromLatLng(lat, long).then(
       response => {
         const address = response.results[0].formatted_address;

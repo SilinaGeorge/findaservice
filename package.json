@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server| node src/server/index.js",
+    "start:dev": "webpack -d| webpack-dev-server| node src/server/index.js",
     "start": "webpack -d | node src/server/index.js",
     "webpack": "./node_modules/.bin/webpack -w",
     "build": "./node_modules/.bin/webpack -w",
@@ -32,6 +32,7 @@
     "geocoder": "^0.2.3",
     "google-map-react": "^1.1.5",
     "https": "^1.0.0",
+    "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
     "mongodb": "^3.4.1",
     "mongoose": "^5.8.4",
@@ -51,6 +52,7 @@
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-form": "^8.2.6",
+    "redux-form-validators": "^3.3.2",
     "redux-thunk": "^2.3.0",
     "validator": "^9.4.1"
   },

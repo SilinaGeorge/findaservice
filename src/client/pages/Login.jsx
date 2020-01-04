@@ -54,13 +54,13 @@ class Login extends Component {
           <div>
             <h2 className="Auth-title">Login</h2>
             <LoginForm onSubmit={this.onLoginClick} />
-            <FacebookLogin
+{/*             <FacebookLogin
               appId="1798335077141814"
               autoLoad={false}
               fields="first_name, last_name, email"
               callback={this.responseFacebook}
               icon="fa-facebook"
-            />
+            /> */}
           </div>
         </main>
       </div>

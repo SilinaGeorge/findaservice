@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import TimePicker from "react-times";
 import "react-times/css/classic/default.css";
+import 'react-times/css/material/default.css';
 import Btn from "./common/Btn.jsx";
 import Input from "./common/Input.jsx";
 import "../scss/form.scss";
@@ -10,8 +11,8 @@ export default class TimeForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toTime: null, // to time
-      fromTime: null, // from time
+      toTime: '1 : 00 PM', // to time
+      fromTime: '00 : 00 PM', // from time
       toMeridiem: null,
       fromMeridiem: null
     };
@@ -26,11 +27,11 @@ export default class TimeForm extends Component {
   // update the to and from time state
 
   onfromTimeChange(time) {
-    this.setState({ fromTime: time });
+    this.setState({ fromTime: `${time.hour} : ${time.minute} ${time.meridiem}` });
   }
 
   ontoTimeChange(time) {
-    this.setState({ toTime: time });
+    this.setState({ toTime: `${time.hour} : ${time.minute} ${time.meridiem}`});
   }
 
   // update the AM PM for to and from fields
@@ -45,12 +46,13 @@ export default class TimeForm extends Component {
 
   // send back the data to the parent class
   submit = () => {
-    const { toTime, fromTime, toMeridiem, fromMeridiem } = this.state;
+/*     const { toTime, fromTime, toMeridiem, fromMeridiem } = this.state;
     const to = toTime + " " + toMeridiem;
-    const from = fromTime + " " + fromMeridiem;
+    const from = fromTime + " " + fromMeridiem; */
     const id =
       "" + new Date().getMilliseconds() + Math.floor(Math.random() * 1000);
-    this.props.onSubmit(from, to, id);
+      console.log(this.state.fromTime)
+    this.props.onSubmit(this.state.fromTime, this.state.toTime, id);
   };
 
   render() {

@@ -61,7 +61,7 @@ const Map = compose(
 )(props =>
   <GoogleMap
     center={{ lat: props.lat, lng: props.lng }}
-    defaultZoom={13}
+    defaultZoom={15}
     options={{ maxZoom: 20 }}
     ref={props.onMapMounted}
     onZoomChanged={props.onZoomChanged}

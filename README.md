@@ -36,9 +36,9 @@ This application allows users(clients) to search for services nearby or at a giv
 1. Allowing service providers to set up their booking form, and for clients to schedule time slots accordingly 
 1. Prevents two users from booking the same time slot during the  same time.
 
-### RUNNING APPLICATION:
+### RUNNING APPLICATION (Dev):
 
 1. npm i
 1. webpack -w
-1. npm start
+1. npm run start:dev
 1. check localhost:PORT and application will be running

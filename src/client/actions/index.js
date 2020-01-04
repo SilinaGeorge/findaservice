@@ -19,7 +19,7 @@ import {
 
 //const url = "https://strawberryshortcakes.herokuapp.com";
 
-const url = "http://localhost:3000";
+const url = "https://localhost:3000";
 // login the client
 export function login(username, password) {
   const request = axios.post(url + "/api/login", {
@@ -30,6 +30,7 @@ export function login(username, password) {
   return dispatch => {
     request
       .then(({ data }) => {
+        console.log('service:', data.service)
         dispatch({
           type: LOGIN_USER,
           payload: data
