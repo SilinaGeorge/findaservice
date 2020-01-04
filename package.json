@@ -1,5 +1,4 @@
 {
-  "heroku-run-build-script": true,
   "name": "strawberryshortcakes",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +8,8 @@
     "start": "webpack -d | node src/server/index.js",
     "webpack": "./node_modules/.bin/webpack -w",
     "build": "./node_modules/.bin/webpack -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "webpack -p"
   },
   "keywords": [],
   "author": "",
