@@ -5,7 +5,7 @@ import "../../scss/Home.scss";
 const NotFound = ({ result }) => {
   return (
     <div className="nomatch">
-      <img src={require("../../media/strawberry.png")} />
+      <img src={require("../../media/target.png")} />
       <p className="sorry-text">
         Sorry we couldn't find anything for {result}
       </p>

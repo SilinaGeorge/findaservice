@@ -50,7 +50,11 @@ class Home extends Component {
         <h5>
           No more inconvenience of calling to schedule, we will do that for you!
         </h5>
+        <img style={{width:'40vh', marginTop:'10vh'}} src={require("../media/target.png")}></img>
       </div>
+
+       
+
     );
   };
 
@@ -92,7 +96,7 @@ class Home extends Component {
           <Row>
             <Col sm="4" className="left-container">
               <div className="left_title">
-                <h2>Strawberry Short Cakes</h2>
+                <h2>Find a Service</h2>
                 <h6>Helping you locate and schedule services.</h6>
               </div>
               <CommonForm
