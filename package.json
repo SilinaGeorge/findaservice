@@ -1,5 +1,5 @@
 {
-  "heroku-postbuild": "webpack --config webpack.config.js",
+  "heroku-run-build-script": true,
   "name": "strawberryshortcakes",
   "version": "1.0.0",
   "description": "",
