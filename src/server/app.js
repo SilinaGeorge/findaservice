@@ -11,8 +11,8 @@ var ObjectId = require("mongodb").ObjectId;
 
 // connect to our database
 mongoose.connect(
-  `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env
-    .DB_SERVER}`
+  'mongodb://silina01:cSB42MnimhMneRSX@cshub-shard-00-00-vtf1l.mongodb.net:27017,cshub-shard-00-01-vtf1l.mongodb.net:27017,cshub-shard-00-02-vtf1l.mongodb.net:27017/findaservice?ssl=true&replicaSet=CSHub-shard-0&authSource=admin&retryWrites=true&w=majority'
+    , { useNewUrlParser: true, useUnifiedTopology: true, }
 );
 
 // create session
@@ -22,8 +22,7 @@ app.use(
   session({
     secret: "StrawberryShortcakeS",
     store: new MongoStore({
-      url: `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process
-        .env.DB_SERVER}`,
+      url: 'mongodb://silina01:cSB42MnimhMneRSX@cshub-shard-00-00-vtf1l.mongodb.net:27017,cshub-shard-00-01-vtf1l.mongodb.net:27017,cshub-shard-00-02-vtf1l.mongodb.net:27017/findaservice?ssl=true&replicaSet=CSHub-shard-0&authSource=admin&retryWrites=true&w=majority',
       ttl: 14 * 24 * 60 * 60 // = 14 days. Default
     }),
     resave: false,
@@ -42,6 +41,13 @@ const Services = require("./models/services.js");
 app.use("/api", router);
 app.use("/api/services", router);
 app.use("/api/appointments", router);
+
+var cors = require('cors');
+var corsOptions = {
+    origin: 'http://localhost:3000/',
+    credentials: true };
+
+app.use(cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

@@ -17,8 +17,9 @@ import {
   LOAD_ACCOUNT
 } from "./actionTypes";
 
-const url = "https://strawberryshortcakes.herokuapp.com";
+//const url = "https://strawberryshortcakes.herokuapp.com";
 
+const url = "http://localhost:3000";
 // login the client
 export function login(username, password) {
   const request = axios.post(url + "/api/login", {

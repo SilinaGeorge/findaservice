@@ -3,7 +3,7 @@ const app = require("./app");
 const dotenv = require("dotenv").config();
 
 // create the sever and listen on that port
-const port = process.env.PORT || 3000;
+const port = /* process.env.PORT || */ 3000;
 const server = http.createServer(app);
 
 server.listen(port);
