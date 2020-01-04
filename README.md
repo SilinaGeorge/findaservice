@@ -2,6 +2,8 @@
 
 **Team Members:** Fauzan Kadri, Osama Alhaq, Silina George
 
+### IN THE PROCESS OF BEING REVAMPED AND RENAMED TO FIND A SERVICE
+
 ### APP URL: https://strawberryshortcakes.herokuapp.com
 ### Docs: https://strawberryshortcakes.herokuapp.com/api-docs.md
 ### Video Demo: https://www.youtube.com/watch?v=tEhx89s041g&feature=youtu.be
