@@ -21,7 +21,7 @@ import {
 
 const url = "https://find--a--service.herokuapp.com";
 // login the client
-export function login(username, password) 
+export function login(username, password) {
   const request = axios.post(url + "/api/login", {
     username,
     password
