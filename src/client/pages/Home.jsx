@@ -23,7 +23,8 @@ class Home extends Component {
   }
 
   // get the users location when component mounts
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
+    console.log('here2')
     this.getLocation();
   }
 
@@ -62,6 +63,7 @@ class Home extends Component {
   getLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
+        console.log(position.coords.latitude)
         this.convertfromLat(
           position.coords.latitude,
           position.coords.longitude

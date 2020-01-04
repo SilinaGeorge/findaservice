@@ -26,9 +26,11 @@ class Discover extends Component {
     this.convertfromLat = this.convertfromLat.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // set our api key
-    Geocode.setApiKey("AIzaSyCr4vaEDtTOy1GLWunU18TVpmZdI0kXCcU");
+    console.log('here')
+     Geocode.setApiKey("AIzaSyA0UqHNnf_ORk0hYHxpplvfG9Ke9wsSNcA"); 
+
   }
 
   // Get latidude & longitude from address.
@@ -74,7 +76,7 @@ class Discover extends Component {
   }
 
   // update the state if the props update
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.props.services !== nextProps.services) {
       this.setState({ services: nextProps.services });
       this.setState({ results: nextProps.services.data.length });

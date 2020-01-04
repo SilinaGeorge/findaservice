@@ -31,7 +31,7 @@ class Appointments extends Component {
   }
 
   // update the state if the props update
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     // update the appointment on status change
     if (
       this.props.status !== nextProps.status ||
