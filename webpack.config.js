@@ -13,13 +13,13 @@ const config = {
       cert: fs.readFileSync('./server.crt')
     },
     port: 3000,       // ssl defult port number
-/*     inline: true,
+/*      inline: true,
 
     historyApiFallback: true,
     publicPath: '/',
     contentBase: './build',
     disableHostCheck: true */
-},
+}, 
   entry: {
     main: APP_DIR + "/index.js"
   },
