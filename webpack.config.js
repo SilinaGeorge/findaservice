@@ -6,6 +6,7 @@ var BUILD_DIR = path.resolve(__dirname, "./build");
 var APP_DIR = path.resolve(__dirname, "./src/client");
 
 const config = {
+  mode: 'production',
   devServer:{
 
     https: {
