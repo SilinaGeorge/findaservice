@@ -37,10 +37,9 @@ class CommonForm extends Component {
           label={field}
           dark={darkfield}
           component={Input}
-          validate={length({ max: 2 })}
+         /*  validate={length({ max: maxLength, message:'too long' })} */
           type={fieldType}
-          name={field}
-          
+          name={field}  
           key={field + ""}
         />
       );
