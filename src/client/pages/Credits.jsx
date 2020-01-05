@@ -42,7 +42,7 @@ class Credits extends Component {
             </Row>
             <Row>
               <Col sm="12" md={{ size: 8, offset: 2 }}>
-                <h5>Ohter Resources:</h5>
+                <h5>Other Resources:</h5>
                 <div className="creidt-links">
                   <a href="https://stackoverflow.com/" title="Stackoverflow">
                     Stackoverflow
